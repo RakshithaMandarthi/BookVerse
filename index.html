@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookVerse — Discover Your Next Story</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><a class="logo" href="index.html"><span>▣</span> BookVerse</a>
+<nav id="nav"><a class="active" href="index.html">Home</a><a href="discover.html">Discover</a><a href="categories.html">Categories</a><a href="authors.html">Authors</a><a href="community.html">Community</a><a href="library.html">My Library</a></nav>
+<div class="header-actions"><button class="icon-btn" id="themeBtn" title="Toggle theme">☾</button><a class="login-link" href="login.html">Login</a><a class="btn small" href="login.html">Sign Up</a><button class="menu-btn" id="menuBtn">☰</button></div></header>
+
+<main>
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow">PERSONALIZED READING • BOOKVERSE</span>
+<h1>Find a Book That Feels <em>Made for You.</em></h1>
+<p>Discover stories, ideas, and unforgettable worlds based on your interests, mood, and reading personality.</p>
+<div class="search-wrap"><span>⌕</span><input id="globalSearch" placeholder="Search books, authors, genres..." autocomplete="off"><button onclick="goSearch()">Discover</button><div id="suggestions"></div></div>
+<div class="hero-buttons"><a class="btn" href="discover.html">Discover Books →</a><a class="btn outline" href="quiz.html">Take the Book Quiz ✦</a></div></div>
+<div class="hero-art"><div class="orb"></div><div class="floating-book b1">ATOMIC<br><b>HABITS</b></div><div class="floating-book b2">DUNE</div><div class="floating-book b3">THE<br>MIDNIGHT<br>LIBRARY</div><div class="plant">🌿</div></div>
+</section>
+
+<section class="section"><div class="section-head"><div><span class="eyebrow">TRENDING NOW</span><h2>Books readers are loving</h2></div><a href="discover.html">View all →</a></div><div class="book-row" id="trending"></div></section>
+
+<section class="section mood-section"><div class="section-head"><div><span class="eyebrow">READING MOOD</span><h2>What are you feeling?</h2></div></div><div class="moods">
+<a href="discover.html?mood=Romance" class="mood romance">❤<b>Romance</b><small>Heartwarming stories</small></a>
+<a href="discover.html?mood=Emotional" class="mood rain">☂<b>Emotional</b><small>Stories that stay with you</small></a>
+<a href="discover.html?mood=Thought-provoking" class="mood mind">◉<b>Thought-provoking</b><small>Ideas to explore</small></a>
+<a href="discover.html?mood=Self-growth" class="mood growth">↗<b>Self-growth</b><small>Become your best self</small></a>
+<a href="discover.html?mood=Fun" class="mood fun">☀<b>Fun & Light</b><small>Easy, joyful reads</small></a>
+<a href="discover.html?mood=Thriller" class="mood thriller">⚡<b>Thriller</b><small>Keep turning pages</small></a>
+<a href="discover.html?mood=Fantasy" class="mood fantasy">✦<b>Fantasy</b><small>Escape to another world</small></a>
+<a href="discover.html?mood=Adventure" class="mood adventure">➤<b>Adventure</b><small>Go somewhere new</small></a>
+</div></section>
+
+<section class="section discovery-box"><div><span class="eyebrow">PERSONALIZED DISCOVERY</span><h2>Tell us what you're in the mood for.</h2><p>Choose a few preferences and we'll create a reading shelf for you.</p></div><div class="preference-grid">
+<label>Mood<select id="prefMood"><option>Any mood</option><option>Romance</option><option>Thriller</option><option>Fantasy</option><option>Self-growth</option></select></label>
+<label>Genre<select id="prefGenre"><option>Any genre</option><option>Fiction</option><option>Self-help</option><option>Science Fiction</option><option>Mystery</option></select></label>
+<label>Reading time<select><option>Any time</option><option>Under 20 min</option><option>20–60 min</option><option>1+ hour</option></select></label>
+<label>Type<select><option>Both</option><option>Fiction</option><option>Non-fiction</option></select></label>
+</div><a class="btn" href="discover.html">Generate My Shelf ✦</a></section>
+
+<section class="section author-strip"><div class="section-head"><div><span class="eyebrow">MEET THE AUTHORS</span><h2>Voices worth discovering</h2></div><a href="authors.html">Explore authors →</a></div><div class="author-mini"><div class="avatar">JC</div><div><b>James Clear</b><span>Habits & personal growth</span></div><a href="authors.html">→</a></div><div class="author-mini"><div class="avatar">MH</div><div><b>Matt Haig</b><span>Fiction & contemporary life</span></div><a href="authors.html">→</a></div><div class="author-mini"><div class="avatar">FH</div><div><b>Frank Herbert</b><span>Science fiction & adventure</span></div><a href="authors.html">→</a></div></section>
+
+<section class="newsletter"><div><span class="eyebrow">WEEKLY INSPIRATION</span><h2>Get your next great read every week.</h2><p>Fresh recommendations, reader picks and literary discoveries.</p></div><form onsubmit="subscribe(event)"><input type="email" required placeholder="Your email address"><button class="btn">Subscribe</button></form></section>
+</main>
+<footer><div><a class="logo" href="index.html"><span>▣</span> BookVerse</a><p>Discover books. Find your next world.</p></div><div><b>Explore</b><a href="discover.html">Discover</a><a href="categories.html">Categories</a><a href="authors.html">Authors</a></div><div><b>Community</b><a href="community.html">Reviews</a><a href="community.html">Discussions</a><a href="library.html">My Library</a></div><div><b>Help</b><a href="#">Help Center</a><a href="#">Privacy</a><a href="#">Terms</a></div><small>© 2026 BookVerse. A static frontend demo.</small></footer>
+<script src="script.js"></script></body></html>
